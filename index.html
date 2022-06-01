@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 
 <head>
     <meta charset="UTF-8" />
@@ -26,27 +26,55 @@
                     </button>
 
                     <nav id="nav-menu"
-                        class="hidden absolute py-5 text-semibold bg-white shadow-lg rounded-lg max-w-[250px] w-full right-4 top-full lg:block lg:static lg:bg-transparent lg:max-w-full lg:shadow-none lg:rounded-none">
+                        class="font-semibold hidden absolute py-5 text-semibold bg-white shadow-lg rounded-lg max-w-[250px] w-full right-4 top-full lg:block lg:static lg:bg-transparent lg:max-w-full lg:shadow-none lg:rounded-none dark:bg-dark dark:shadow-slate-500 lg:dark:bg-transparent">
                         <ul class="block lg:flex">
                             <li class="group">
                                 <a href="#home"
-                                    class="text-base text-dark py-2 mx-8 flex group-hover:text-primary">Home</a>
+                                    class="text-base text-dark py-2 mx-8 flex group-hover:text-primary dark:text-white">Home</a>
                             </li>
                             <li class="group">
                                 <a href="#about"
-                                    class="text-base text-dark py-2 mx-8 flex group-hover:text-primary">About Me</a>
+                                    class="text-base text-dark py-2 mx-8 flex group-hover:text-primary dark:text-white">About
+                                    Me</a>
                             </li>
                             <li class="group">
                                 <a href="#portfolio"
-                                    class="text-base text-dark py-2 mx-8 flex group-hover:text-primary">Portfolio</a>
+                                    class="text-base text-dark py-2 mx-8 flex group-hover:text-primary dark:text-white">Portfolio</a>
                             </li>
                             <li class="group">
                                 <a href="#clients"
-                                    class="text-base text-dark py-2 mx-8 flex group-hover:text-primary">Clients</a>
+                                    class="text-base text-dark py-2 mx-8 flex group-hover:text-primary dark:text-white">Clients</a>
                             </li>
                             <li class="group">
-                                <a href="#kontak"
-                                    class="text-base text-dark py-2 mx-8 flex group-hover:text-primary">Contact</a>
+                                <a href="#contact"
+                                    class="text-base text-dark py-2 mx-8 flex group-hover:text-primary dark:text-white">Contact</a>
+                            </li>
+                            <li class="mt-3 lg:mt-0 flex items-center pl-8">
+                                <div class="flex">
+                                    <span class="mr-2 text-sm text-slate-500"><svg role="img" width="20"
+                                            class="fill-current text-dark dark:text-white"
+                                            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                            <!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+                                            <path
+                                                d="M256 159.1c-53.02 0-95.1 42.98-95.1 95.1S202.1 351.1 256 351.1s95.1-42.98 95.1-95.1S309 159.1 256 159.1zM509.3 347L446.1 255.1l63.15-91.01c6.332-9.125 1.104-21.74-9.826-23.72l-109-19.7l-19.7-109c-1.975-10.93-14.59-16.16-23.72-9.824L256 65.89L164.1 2.736c-9.125-6.332-21.74-1.107-23.72 9.824L121.6 121.6L12.56 141.3C1.633 143.2-3.596 155.9 2.736 164.1L65.89 256l-63.15 91.01c-6.332 9.125-1.105 21.74 9.824 23.72l109 19.7l19.7 109c1.975 10.93 14.59 16.16 23.72 9.824L256 446.1l91.01 63.15c9.127 6.334 21.75 1.107 23.72-9.822l19.7-109l109-19.7C510.4 368.8 515.6 356.1 509.3 347zM256 383.1c-70.69 0-127.1-57.31-127.1-127.1c0-70.69 57.31-127.1 127.1-127.1s127.1 57.3 127.1 127.1C383.1 326.7 326.7 383.1 256 383.1z" />
+                                        </svg></span>
+                                    <input type="checkbox" class="hidden" id="dark-toggle" />
+                                    <label for="dark-toggle">
+                                        <div
+                                            class="flex h-5 w-9 cursor-pointer items-center rounded-full bg-slate-500 p-1 dark:text-white">
+                                            <div
+                                                class="toggle-circle h-4 w-4 rounded-full bg-white transition duration-300 ease-in-out dark:text-black">
+                                            </div>
+                                        </div>
+                                    </label>
+                                    <span class="ml-2 text-sm text-slate-500"><svg role="img" width="20"
+                                            class="fill-current text-dark dark:text-white"
+                                            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                            <!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+                                            <path
+                                                d="M32 256c0-123.8 100.3-224 223.8-224c11.36 0 29.7 1.668 40.9 3.746c9.616 1.777 11.75 14.63 3.279 19.44C245 86.5 211.2 144.6 211.2 207.8c0 109.7 99.71 193 208.3 172.3c9.561-1.805 16.28 9.324 10.11 16.95C387.9 448.6 324.8 480 255.8 480C132.1 480 32 379.6 32 256z" />
+                                        </svg></span>
+                                </div>
                             </li>
                         </ul>
                     </nav>
@@ -55,17 +83,20 @@
         </div>
     </header>
 
-    <section id="home" class="pt-36">
+    <section id="home" class="pt-36 dark:bg-dark">
         <div class="container">
             <div class="flex flex-wrap">
                 <div class="w-full self-center px-4 lg:w-1/2">
-                    <h1 class="text-base font-semibold mb-1 text-dark md:text-xl">Hi!, i'm...
-                        <span class="block font-bold text-slate-900 text-4xl mt-1 sm:text-2xl lg:text-3xl"> Wahyu Nahda
+                    <h1 class="text-base font-semibold mb-1 text-dark md:text-xl dark:text-primary">Hi!, i'm...
+                        <span
+                            class="block font-bold text-slate-900 text-4xl mt-1 sm:text-2xl lg:text-3xl dark:text-white">
+                            Wahyu Nahda
                             Putra</span>
                     </h1>
-                    <h2 class="font-medium text-lg mb-5 lg:text-1xl">IT Student & <span class="text-dark">
+                    <h2 class="font-medium text-lg mb-5 lg:text-1xl dark:text-slate-300">IT Student & <span
+                            class="text-dark dark:text-slate-300">
                             Editor</span></h2>
-                    <p class="font-medium text-secondary mb-10 leading-relaxed">I am an <span
+                    <p class="font-medium text-secondary mb-10 leading-relaxed dark:text-slate-300">I am an <span
                             class="text-primary font-semibold">Informatics Engineering Student & Editor</span> from
                         Kendari City, Southeast Sulawesi.</p>
                     <a href="https://api.whatsapp.com/send?phone=6285215409719&text=Hai!,%20Wahyu%20Nahda%20Putra 👋"
@@ -74,9 +105,10 @@
                 </div>
                 <div class="w-full self-end px-4 lg:w-1/2">
                     <div class="relative mt-10 lg:mt-9 lg:right-0">
-                        <img src="dist/img/wahyufix.png" alt="Wahyu Nahda Putra" class="max-w-full mx-auto" />
-                        <span class="absolute bottom-0 -z-10 left-1/2 -translate-x-1/2 md:scale-125">
-                            <svg width="450" height="420" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                        <img src="dist/img/wahyufix.png" alt="Wahyu Nahda Putra"
+                            class="z-10 max-w-full mx-auto relative" />
+                        <span class="absolute bottom-0 left-1/2 -translate-x-1/2 md:scale-125 pb-20">
+                            <svg width="420" height="400" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
                                 <path fill="#f97316"
                                     d="M30.5,-55.6C41.2,-46.6,52.7,-41.9,61.2,-33.3C69.8,-24.7,75.3,-12.4,74.3,-0.6C73.2,11.2,65.6,22.3,57.4,31.5C49.2,40.6,40.5,47.8,30.8,56.2C21.1,64.6,10.6,74.2,-2.1,77.8C-14.7,81.4,-29.5,79,-38.1,70C-46.8,61.1,-49.3,45.5,-51.3,32.7C-53.2,20,-54.6,10,-57.9,-1.9C-61.2,-13.8,-66.4,-27.6,-64,-39.6C-61.7,-51.7,-51.7,-62,-39.8,-70.3C-27.8,-78.6,-13.9,-84.9,-2,-81.4C9.9,-77.9,19.8,-64.7,30.5,-55.6Z"
                                     transform="translate(100 100) scale(1.1)" />
@@ -88,38 +120,41 @@
         </div>
     </section>
 
-    <section id="about" class="pt-36 pb-32 bg-slate-100">
+    <section id="about" class="pt-36 pb-32 bg-slate-100 dark:bg-dark">
         <div class="container">
             <div class="flex flex-wrap">
                 <div class="w-full px-4 mb-10 lg:w-1/2">
                     <h4 class="font-semibold text-primary text-lg mb-2">About Me</h4>
-                    <h2 class="font-semibold text-dark text-2xl mb-5 max-w-md sm:text-2xl lg:text-3xl">A Brief
+                    <h2 class="font-semibold text-dark text-2xl mb-5 max-w-md sm:text-2xl lg:text-3xl dark:text-white">A
+                        Brief
                         Introduction Myself</h2>
-                    <p class="font-medium text-secondary max-w-xl lg:text-4md mb-3">
+                    <p class="font-medium text-secondary max-w-xl lg:text-4md mb-3 dark:text-slate-300">
                         Hello Everyone, my name is Wahyu Nahda Putra. I am an student, editor, and a fan of free
                         software.
                     </p>
-                    <p class="font-medium text-secondary max-w-xl lg:text-4md mb-3">
+                    <p class="font-medium text-secondary max-w-xl lg:text-4md mb-3 dark:text-slate-300">
                         I live in Kendari City, Southeast Sulawesi, Indonesia. I was born in this City, April 20, 2003.
                         I am 19 years old. And i am an Informatics Engineering Student at Halu Oleo University, Kendari.
                     </p>
-                    <p class="font-medium text-secondary max-w-xl lg:text-4md mb-3">
+                    <p class="font-medium text-secondary max-w-xl lg:text-4md mb-3 dark:text-slate-300">
                         Programming languages that i learned, namely PHP and JavaScript. HTML mark language, CSS design
                         language, and database/DBMS. Codeigniter Framework, Bootstrap 4, and Tailwind CSS.
                     </p>
-                    <p class="font-medium text-secondary max-w-xl lg:text-4md mb-3">
+                    <p class="font-medium text-secondary max-w-xl lg:text-4md mb-3 dark:text-slate-300">
                         I started studying and liking coding when i entered a Vocational High School, Major of Software
                         Engineering or what is familiarly called RPL.
                     </p>
-                    <p class="font-medium text-secondary max-w-xl lg:text-4md mb-3">
+                    <p class="font-medium text-secondary max-w-xl lg:text-4md mb-3 dark:text-slate-300">
                         Besides coding, i also like playing futsal, swimming and quality time with my family. And spend
                         time on instagram, facebook, telegram and youtube. Hehehe...
                     </p>
                 </div>
                 <div class="w-full px-4 lg:w-1/2">
-                    <h3 class="font-semibold text-dark text-2xl mb-4 sm:text-2xl lg:text-3xl lg:pt-10">Let's Be Friend
+                    <h3 class="font-semibold text-dark text-2xl mb-4 sm:text-2xl lg:text-3xl lg:pt-10 dark:text-white">
+                        Let's Be Friend
                     </h3>
-                    <p class="font-medium text-secondary mb-6 lg:text-4md">If you want to make friends or get know me
+                    <p class="font-medium text-secondary mb-6 lg:text-4md dark:text-slate-300">If you want to make
+                        friends or get know me
                         better, please visit my social media below.</p>
                     <div class="flex items-center">
                         <a href="#" target="_blank"
@@ -177,13 +212,17 @@
         </div>
     </section>
 
-    <section id="portfolio" class="pt-36 pb-16 bg-slate-200">
+    <section id="portfolio" class="pt-36 pb-16 bg-slate-200 dark:bg-dark">
         <div class="container">
             <div class="w-full px-4">
                 <div class="max-w-xl mx-auto text-center mb-16">
                     <h4 class="font-semibold text-lg text-primary mb-2">Portfolio</h4>
-                    <h2 class="font-bold text-dark text-2xl mb-4 sm:text-2xl lg:text-3xl">My Latest Project</h2>
-                    <p class="font-medium text-md text-secondary">This is my latest project. There are several School
+                    <h2
+                        class="font-bold justify-center text-dark text-2xl mb-4 sm:text-2xl lg:text-3xl dark:text-white">
+                        My Latest
+                        Project</h2>
+                    <p class="font-medium text-md text-secondary dark:text-slate-300">This is my latest project. There
+                        are several School
                         Inventory project web pages designed using the codeigniter framework, HTML CSS design and
                         marking language, developed using PHP and JavaScript languages, and using the SB Admin 2
                         template as well as photos edited using Adobe Lightroom Photoshop.</p>
@@ -195,69 +234,83 @@
                     <div class="rounded-md shadow-md overflow-hidden">
                         <img src="dist/img/portfolio/portfo1.jpg" alt="login" width="w-full" />
                     </div>
-                    <h3 class="font-semibold text-dark text-center text-xl mt-5 mb-3">My Web Project Login Page
+                    <h3 class="font-semibold text-dark text-center text-xl mt-5 mb-3 dark:text-white">My Web Project
+                        Login Page
                     </h3>
-                    <p class="font-medium text-base text-secondary text-center">Display the login page to enter the
+                    <p class="font-medium text-base text-secondary text-center dark:text-slate-300">Display the login
+                        page to enter the
                         homepage of the School Inventory website.</p>
                 </div>
                 <div class="mb-12 p-4 md:w-1/2">
                     <div class="rounded-md shadow-md overflow-hidden">
                         <img src="dist/img/portfolio/portf2.jpg" alt="dashboard" width="w-full" />
                     </div>
-                    <h3 class="font-semibold text-dark text-center text-xl mt-5 mb-3">My Web Project Home Page
+                    <h3 class="font-semibold text-dark text-center text-xl mt-5 mb-3 dark:text-white">My Web Project
+                        Home Page
                     </h3>
-                    <p class="font-medium text-base text-secondary text-center">Display of the home page of the School
+                    <p class="font-medium text-base text-secondary text-center dark:text-slate-300">Display of the home
+                        page of the School
                         Inventory website.</p>
                 </div>
                 <div class="mb-12 p-4 md:w-1/2">
                     <div class="rounded-md shadow-md overflow-hidden">
                         <img src="dist/img/portfolio/portfo3.jpg" alt="fitur crud" width="w-full" />
                     </div>
-                    <h3 class="font-semibold text-dark text-center text-xl mt-5 mb-3">My Web Project CRUD Feature Page
+                    <h3 class="font-semibold text-dark text-center text-xl mt-5 mb-3 dark:text-white">My Web Project
+                        CRUD Feature Page
                     </h3>
-                    <p class="font-medium text-base text-secondary text-center">Display the CRUD feature page or add,
+                    <p class="font-medium text-base text-secondary text-center dark:text-slate-300">Display the CRUD
+                        feature page or add,
                         view, edit,and delete data on School Inventory website.</p>
                 </div>
                 <div class="mb-12 p-4 md:w-1/2">
                     <div class="rounded-md shadow-md overflow-hidden">
                         <img src="dist/img/portfolio/portf4.jpg" alt="logout" width="w-full" />
                     </div>
-                    <h3 class="font-semibold text-dark text-center text-xl mt-5 mb-3">My Web Project Logout Page
+                    <h3 class="font-semibold text-dark text-center text-xl mt-5 mb-3 dark:text-white">My Web Project
+                        Logout Page
                     </h3>
-                    <p class="font-medium text-base text-secondary text-center">Display the logout page of the School
+                    <p class="font-medium text-base text-secondary text-center dark:text-slate-300">Display the logout
+                        page of the School
                         Inventory website.</p>
                 </div>
                 <div class="mb-8 p-4 md:w-1/2">
                     <div class="rounded-md shadow-md overflow-hidden">
                         <img src="dist/img/portfolio/porf5.jpg" alt="lr" width="w-full" />
                     </div>
-                    <h3 class="font-semibold text-dark text-center text-xl mt-5 mb-3">My Photos & Edits (Adobe Lightroom
+                    <h3 class="font-semibold text-dark text-center text-xl mt-5 mb-3 dark:text-white">My Photos & Edits
+                        (Adobe Lightroom
                         Photoshop)
                     </h3>
-                    <p class="font-medium text-base text-secondary text-center">Photo a ship in a harbor and edited
+                    <p class="font-medium text-base text-secondary text-center dark:text-slate-300">Photo a ship in a
+                        harbor and edited
                         using Adobe Lightroom Photoshop.</p>
                 </div>
                 <div class="mb-8 p-4 md:w-1/2">
                     <div class="rounded-md shadow-md overflow-hidden">
                         <img src="dist/img/portfolio/portf6.jpg" alt="lr2" width="w-full" />
                     </div>
-                    <h3 class="font-semibold text-dark text-center text-xl mt-5 mb-3">My Photos & Edits (Adobe Lightroom
+                    <h3 class="font-semibold text-dark text-center text-xl mt-5 mb-3 dark:text-white">My Photos & Edits
+                        (Adobe Lightroom
                         Photoshop)
                     </h3>
-                    <p class="font-medium text-base text-secondary text-center">A random photo of a cherry tree under
+                    <p class="font-medium text-base text-secondary text-center dark:text-slate-300">A random photo of a
+                        cherry tree under
                         sun and edited using Adobe Lightroom Photoshop.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="clients" class="pt-36 pb-32 bg-slate-500">
+    <section id="clients" class="pt-36 pb-32 bg-slate-500 dark:bg-dark">
         <div class="container">
             <div class="w-full px-4">
                 <div class="mx-auto text-center mb-10">
                     <h4 class="font-semibold text-lg text-primary mb-2">Clients</h4>
-                    <h2 class="font-bold text-white text-2xl mb-4 sm:text-2xl lg:text-3xl">Who Have Worked Together</h2>
-                    <p class="font-medium text-md text-slate-300">Has worked with SMK Negeri 4 Kendari, in the context
+                    <h2 class="font-bold text-white text-2xl mb-4 sm:text-2xl lg:text-3xl dark:text-white">Who Have
+                        Worked Together</h2>
+                    <p class="font-medium text-md text-slate-300 dark:text-slate-300">Has worked with SMK Negeri 4
+                        Kendari, in the context
                         of creating a School Inventory website.</p>
                 </div>
             </div>
@@ -272,10 +325,10 @@
         </div>
     </section>
 
-    <section id="contact" class="pt-36 pb-32 bg-slate-700">
+    <section id="contact" class="pt-36 pb-32 bg-slate-700 dark:bg-dark">
         <div class="container">
             <div class="w-full px-4">
-                <div class="max-w-xl mx-auto text-center mb-16">
+                <div class="max-w-xl mx-auto text-center mb-5">
                     <h4 class="font-semibold text-lg text-primary mb-2">Contact</h4>
                     <h2 class="font-bold text-white text-2xl mb-4 sm:text-2xl lg:text-3xl">Call Me</h2>
                     <p class="font-medium text-md text-slate-300 md:text-lg">Please contact me via email, if you want to
@@ -415,6 +468,11 @@
             </div>
         </div>
     </footer>
+
+    <a href="#home" id="to-top"
+        class="fixed hidden z-[9999] bottom-4 p-4 right-5 h-14 w-14 bg-primary block rounded-full justify-center items-center hover:animate-pulse">
+        <span class="block w-5 h-5 border-t-2 border-l-2 rotate-45 mt-2"></span>
+    </a>
 
     <script src="dist/js/script.js"></script>
 
